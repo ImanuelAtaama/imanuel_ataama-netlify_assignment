@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tugas assigment</title>
+    <!-- <link rel="stylesheet" href="index.css"> -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+        theme: {
+            screens: {
+                '2xl': {'max': '1535px'},
+                // => @media (max-width: 1535px) { ... }
+        
+                'xl': {'max': '1279px'},
+                // => @media (max-width: 1279px) { ... }
+        
+                'lg': {'max': '1023px'},
+                // => @media (max-width: 1023px) { ... }
+        
+                'md': {'max': '767px'},
+                // => @media (max-width: 767px) { ... }
+        
+                'sm': {'max': '639px'},
+                // => @media (max-width: 639px) { ... }
+            }
+            }
+        }
+    </script>
+</head class="m-0">
+<body>
+    <article class="">
+        <header class="bg-[#353836] card"> 
+            <div class="flex flex-row flex-wrap justify-between items-center card-text">
+                <h1 class="text-xl m-0 text-[#D9D9D9]">Commanditaire Vennootschap</h1>
+                <nav class="no-underline nav">
+                    <a class="pr-2.5 text-[#D9D9D9] no-underline" href="#home">Home</a>
+                    <a class="pr-2.5 text-[#D9D9D9] no-underline" href="#me">Contact Me</a>
+                    <a class="text-[#D9D9D9] no-underline" href="#sosmed">Find Me</a>
+                </nav>
+            </div>               
+            
+            <section class="flex flex-row flex-wrap grup-foto">
+                <section class="p-[10%] flex justify-center flex-[2] foto">
+                    <section class="w-[183px] h-[231px] rounded-[5%] bg-[#D9D9D9] flex justify-center items-center bg">
+                        <img class="w-[90%] h-[90%] rounded-[5%]" id="foto" src="/image/foto.png" alt="">
+                    </section>
+                </section>                
+                
+                <section class="flex-[3] p-[10%] text-[#D9D9D9] text-justify text-header">
+                    <h2>Imanuel Ataama</h2>
+                    <p>Nama Saya Imanuel Ataama, Mahasuswa  di Universitas Jember. Saya selalu tertarim akan pengembangan teknologi dan selalu merasa senang dan suka mengembangkan hasil program atau proyek yang saya buat. Saya dikenal ambisius dan humble karna sikap saya yang mudah bergaul dan tidak pemilih saat berteman</p>
+                </section>
+            </section>
+        </header>
+        <main id="home" class=" flex flex-wrap flex-col justify-center main-coten">
+            <div class="flex flex-wrap flex-row lg:flex-col">
+                <section class="flex-[1] lg:w-[300px] w-[486px] h-[363px]">
+                    <div class="m-[20%] lg:m-[50px] lg:w-[300px] w-[486px] h-[363px] rounded-[5%] bg-[#D9D9D9] flex justify-center item-center">
+                        <section class="p-[15%] slf-conten1">
+                            <h2 class="text-center"><b>Skills</b></h2><br>
+                            <ul>
+                                <li>Kepemimpinan</li>
+                                <li>Conceptual Sklill</li>
+                                <li>Desain Game</li>
+                                <li>Multi tasking</li>
+                                <li>HTML</li>
+                                <li>CSS</li>
+                                <li>Python</li>
+                            </ul>
+                        </section>
+                    </div>
+                </section>
+    
+                <section class="flex-[1] w-[486px] lg:w-[300px] h-[363] slf2">
+                    <div class="m-[20%] lg:m-[50px] lg:w-[300px] w-[486px] h-[363px] rounded-[5%] bg-[#D9D9D9] flex justify-center item-center">
+                        <section class="p-[15%] slf-conten2">
+                            <h2 class="text-center"><b>Interest</b></h2><br>
+                            <ol>
+                                <li>Pengembangan Dan Desain Permainan</li>
+                                <li>Kecerdasan Buatan  (AI)</li>
+                                <li>Front-End Website</li>
+                            </ol>
+                        </section>
+                    </div>
+                    
+                </section>
+            </div>
+            <section id="me">
+                <section class="flex-[1] mt-[5%] lg:m-[50px]">
+                    <h2>Contact Me:</h2>
+                    <section class="w-auto lg:w-[300px] h-[50px] mt-[3%] flex flex-row flex-colrounded-[10px]">
+                        <div class="flex-[1]">
+                            <label for="email">Email:</label>
+                            <input class="bg-[#D9D9D9] m-[3px] w-[99%] h-[95%] rounded-[10px] " type="email" name="email">
+                        </div>
+                        <div class="flex-[1]">
+                            <label for="pass">Password:</label>
+                            <input class="bg-[#D9D9D9] m-[3px] w-[99%] h-[95%] rounded-[10px]" type="password" name="pass">
+                        </div>    
+                    </section>
+                </section>
+                    
+                <section class="flex-[2] mt-[3%] lg:m-[50px] ">
+                    <section class="flex flex-col ">
+                        <div class=" lg:w-[300px] flex-1">
+                            <label for="message">Tinggalkan Pesan Anda:</label><br>
+                            <textarea class="bg-[#D9D9D9] m-[2px] w-[99%] h-[95%] rounded-[10px]" name="message" rows="10" cols="30" ></textarea>
+                        </div>
+                        <div class="flex-m-[10px] 1 w-[60px] rounded-[5%] bg-[#D9D9D9]">
+                            <div class="p-[2px]">
+                                <button type="button" value="submit"  onclick="alert('ThankYou :*')">Submit</button>
+                            </div>
+                        </div>
+                    </section>
+                </section>
+
+                <form action="">
+                    
+                    <br><br>
+                    
+                </form>
+            </section>
+        </main>
+        <center class="">
+            <footer class="flex justify-center flex-col tanda-kaki " id="me">
+                <section id="sosmed" class="flex flex-row justify-center items-center">
+                    <section class="mt-[14%] grid grid-cols-[50px_50px_50px] gap-4 justify-center main-fthr">
+                        <div>
+                            <a href="https://www.instagram.com/_sama.el/">
+                            <div class="w-9">
+                                <img class="w-[100%]" src="/image/instagram.png" alt="">
+                            </div>
+                            </a>
+                        </div>
+                        <div class="w-9">
+                            <a  href="https://www.linkedin.com/in/imanuel-ataama-8077b721b/">
+                            <div class="w-9">
+                                <img class="w-[100%]" src="/image/LinkedIn.png" alt="">
+                            </div>
+                            </a>
+                        </div>
+                        <div class="w-9">
+                            <a href="https://github.com/ImanuelAtaama">
+                            <div>
+                                <img class="w-[100%]" src="/image/github.png" alt="">
+                            </div>
+                            </a>
+                        </div>
+                    </section>
+                </section>   
+                </section class="copy"> 
+                    <div class="mt-[10px] text-center">
+                        <p ><em>Copyrigh By Imanuel Ataama</em></p>
+                    </div>
+                </section>
+            </footer>
+        </center>
+    </article>
+</body>
+</html>
